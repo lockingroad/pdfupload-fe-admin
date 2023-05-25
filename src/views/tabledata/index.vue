@@ -155,7 +155,7 @@ const calendarTypeOptions = [
   { key: "EU", display_name: "理工类" },
 ];
 
-// arr to obj, such as { CN : "China", US : "USA" }
+// arr to obj, such as { CN : "China", US : "USA" } 1
 const calendarTypeKeyValue = calendarTypeOptions.reduce((acc, cur) => {
   acc[cur.key] = cur.display_name;
   return acc;
