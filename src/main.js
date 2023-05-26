@@ -24,7 +24,14 @@ Vue.use(Element, {
 })
 
 Vue.config.productionTip = false
-
+var _hmt = _hmt || [];
+window._hmt = _hmt; // 将_hmt挂载到window下
+ (function () {
+       var hm = document.createElement("script");
+       hm.src = "https://hm.baidu.com/hm.js?"+ process.env.VUE_APP_BAIDU_ANA_ID;
+       var s = document.getElementsByTagName("script")[0];
+       s.parentNode.insertBefore(hm, s);
+  })();
 new Vue({
   el: '#app',
   router,
